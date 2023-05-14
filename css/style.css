@@ -334,6 +334,15 @@ html {
 
     .header .menu ul li a {
         font-size: 20pt;
+        padding: 4px;
+        border-bottom: 1px solid #fff;
+        border-left: 1px solid #fff;
+        transition: linear all .6s;
+    } 
+
+    .header .menu ul li a:hover {
+        border-bottom: 5px solid #fff;
+        border-left: 5px solid #fff;
     } 
 
     #menu-bar:checked ~ .menu {
