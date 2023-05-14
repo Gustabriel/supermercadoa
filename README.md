@@ -11,7 +11,7 @@
 
 ## Projeto final
 # Disciplina: Aplicações para Internet
-# Professores: Alcides
+# Professor: Alcides
 O supermercado A precisa de uma página única (use a ideia de scrolling) contendo todos os produtos separados
 por categorias, os produtos possuem um título e um valor. A página deve ser responsiva para permitir que o
 cliente visualize no desktop e no celular;
