@@ -21,4 +21,5 @@
 ### Fabio Luiz Teixeira            – RGM: 28031270
 
 # Link do projeto online 🔗
-https://gustabriel.github.io/supermercadoa/
+<a href="https://gustabriel.github.io/supermercadoa/" target="_blank">Supermercado A</a>
+
