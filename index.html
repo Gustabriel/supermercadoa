@@ -1,0 +1,2082 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,700&family=Roboto:wght@300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="shortcut icon"
+      href="imagens/logoA-icon.ico"
+      type="image/x-icon"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+      crossorigin="anonymous"
+    />
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Supermercado A</title>
+  </head>
+  <body>
+    <div class="bckgd">
+      <header class="header">
+        <section class="banner-top">
+          <img src="imagens/banners/ban-top.gif" alt="" />
+        </section>
+
+        <section class="search">
+          <div class="logo">
+            <p>Supermercado</p>
+            <img src="imagens/logoA.png" alt="" />
+          </div>
+          <div class="col-lg-6 find">
+            <div class="input-group">
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Pesquise por marcas e produtos aqui..."
+              />
+              <span class="input-group-btn">
+                <button class="btn btn-default" type="button">Pesquise</button>
+              </span>
+            </div>
+          </div>
+
+          <div>
+            <img class="perfil btn-menu" src="imagens/icon-perfil.png" alt="" />
+            <img class="cart btn-menu" src="imagens/icon-cart.png" alt="" />
+          </div>
+        </section>
+
+        <input type="checkbox" id="menu-bar" />
+        <label for="menu-bar" id="lbl-menu-bar">
+          <span id="bar"></span>
+          <span id="bar"></span>
+          <span id="bar"></span>
+        </label>
+
+        <nav class="menu">
+          <ul>
+            <li><a href="#carnes">Carnes</a></li>
+            <li><a href="#margarinas">Margarinas</a></li>
+            <li><a href="#graos">Grãos</a></li>
+            <li><a href="#temperos">Temperos</a></li>
+            <li><a href="#doces">Doces</a></li>
+            <li><a href="#bebidas">Bebidas</a></li>
+            <li><a href="#higiene">Higiene e limpeza</a></li>
+            <li><a href="#verduras">Verduras e Legumes</a></li>
+            <li><a href="#frutas">Frutas</a></li>
+            <li><a href="#peixes">Peixes e derivados</a></li>
+          </ul>
+        </nav>
+      </header>
+      <section class="banner-promo-mb">
+        <img src="imagens/banners/banner-mb.png" alt="" />
+      </section>
+
+      <section class="banners-promo">
+        <div
+          id="carouselExampleIndicators"
+          class="carousel carousel-promo slide"
+        >
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="3"
+              aria-label="Slide 4"
+            ></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img
+                src="imagens/banners/ban-1.jpg"
+                class="d-block w-100"
+                alt="..."
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="imagens/banners/ban-2.jpg"
+                class="d-block w-100"
+                alt="..."
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="imagens/banners/ban-3.jpg"
+                class="d-block w-100"
+                alt="..."
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="imagens/banners/ban-4.jpg"
+                class="d-block w-100"
+                alt="..."
+              />
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev carousel-control-prev-promo"
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next carousel-control-next-promo"
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </section>
+
+      <section class="banners-bottom">
+        <img src="imagens/banners/banner-bottom-1.png" alt="" />
+        <img src="imagens/banners/banner-bottom-2.png" alt="" />
+        <img src="imagens/banners/banner-bottom-3.png" alt="" />
+        <img src="imagens/banners/banner-bottom-4.png" alt="" />
+      </section>
+    </div>
+
+    <main class="container-geral">
+      
+      <article class="cat-carnes" id="carnes">
+        <section class="slides-cat carnes">
+          <div class="title-cat">
+            <h1>Carnes</h1>
+          </div>
+          <div
+            id="carousel-carnes"
+            class="carousel carousel-dark slide carne"
+            data-bs-touch="false"
+          >
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="cards-wrapper">
+                  <div class="card">
+                    <div class="image-wrapper">
+                      <img src="imagens/img1.png" alt="..." />
+                    </div>
+                    <div class="card-body">
+                      <h5 class="card-title">
+                        Picanha Friboi tradicional peça a vácuo kg
+                      </h5>
+                      <p class="card-text">R$ 57,99</p>
+                      <a href="#" class="btn btn-primary">Comprar</a>
+                    </div>
+                  </div>
+
+                  <div class="card">
+                    <div class="image-wrapper">
+                      <img src="imagens/img2.png" alt="..." />
+                    </div>
+                    <div class="card-body">
+                      <h5 class="card-title">Fraldinha Friboi peça kg</h5>
+                      <p class="card-text">R$ 36,99</p>
+                      <a href="#" class="btn btn-primary">Comprar</a>
+                    </div>
+                  </div>
+
+                  <div class="card">
+                    <div class="image-wrapper">
+                      <img src="imagens/img3.png" alt="..." />
+                    </div>
+                    <div class="card-body">
+                      <h5 class="card-title">Contrafilé pedaço kg</h5>
+                      <p class="card-text">R$ 41,99</p>
+                      <a href="#" class="btn btn-primary">Comprar</a>
+                    </div>
+                  </div>
+
+                  <div class="card">
+                    <div class="image-wrapper">
+                      <img src="imagens/img4.png" alt="..." />
+                    </div>
+                    <div class="card-body">
+                      <h5 class="card-title">
+                        Paleta de cordeiro Do Chef congelada peça kg
+                      </h5>
+                      <p class="card-text">R$ 45,99</p>
+                      <a href="#" class="btn btn-primary">Comprar</a>
+                    </div>
+                  </div>
+
+                  <div class="card">
+                    <div class="image-wrapper">
+                      <img src="imagens/img5.png" alt="..." />
+                    </div>
+                    <div class="card-body">
+                      <h5 class="card-title">Cupim Friboi pedaço kg</h5>
+                      <p class="card-text">R$ 36,99</p>
+                      <a href="#" class="btn btn-primary">Comprar</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="cards-wrapper">
+                  <div class="card">
+                    <div class="image-wrapper">
+                      <img src="imagens/img6.png" alt="..." />
+                    </div>
+                    <div class="card-body">
+                      <h5 class="card-title">
+                        Picanha suína Pamplona temperada resfriada peça kg
+                      </h5>
+                      <p class="card-text">R$ 26,99</p>
+                      <a href="#" class="btn btn-primary">Comprar</a>
+                    </div>
+                  </div>
+
+                  <div class="card">
+                    <div class="image-wrapper">
+                      <img src="imagens/img7.png" alt="..." />
+                    </div>
+                    <div class="card-body">
+                      <h5 class="card-title">
+                        Costela suína Perdigão a granel kg
+                      </h5>
+                      <p class="card-text">R$ 21,99</p>
+                      <a href="#" class="btn btn-primary">Comprar</a>
+                    </div>
+                  </div>
+
+                  <div class="card">
+                    <div class="image-wrapper">
+                      <img src="imagens/img8.png" alt="..." />
+                    </div>
+                    <div class="card-body">
+                      <h5 class="card-title">
+                        Bisteca suína Sadia a granel kg
+                      </h5>
+                      <p class="card-text">R$ 17,99</p>
+                      <a href="#" class="btn btn-primary">Comprar</a>
+                    </div>
+                  </div>
+
+                  <div class="card">
+                    <div class="image-wrapper">
+                      <img src="imagens/img9.png" alt="..." />
+                    </div>
+                    <div class="card-body">
+                      <h5 class="card-title">
+                        Coxinha da asa de frango a granel kg
+                      </h5>
+                      <p class="card-text">R$ 14,99</p>
+                      <a href="#" class="btn btn-primary">Comprar</a>
+                    </div>
+                  </div>
+
+                  <div class="card">
+                    <div class="image-wrapper">
+                      <img src="imagens/img10.png" alt="..." />
+                    </div>
+                    <div class="card-body">
+                      <h5 class="card-title">
+                        Linguiça toscana Seara a granel kg
+                      </h5>
+                      <p class="card-text">R$ 15,29</p>
+                      <a href="#" class="btn btn-primary">Comprar</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="cards-wrapper">
+                  <div class="card">
+                    <div class="image-wrapper">
+                      <img src="imagens/img11.png" alt="..." />
+                    </div>
+                    <div class="card-body">
+                      <h5 class="card-title">
+                        Linguiça calabresa defumada Seara a granel kg
+                      </h5>
+                      <p class="card-text">R$ 18,59</p>
+                      <a href="#" class="btn btn-primary">Comprar</a>
+                    </div>
+                  </div>
+
+                  <div class="card">
+                    <div class="image-wrapper">
+                      <img src="imagens/img7.png" alt="..." />
+                    </div>
+                    <div class="card-body">
+                      <h5 class="card-title">
+                        Costela suína Perdigão a granel kg
+                      </h5>
+                      <p class="card-text">R$ 21,99</p>
+                      <a href="#" class="btn btn-primary">Comprar</a>
+                    </div>
+                  </div>
+
+                  <div class="card">
+                    <div class="image-wrapper">
+                      <img src="imagens/img9.png" alt="..." />
+                    </div>
+                    <div class="card-body">
+                      <h5 class="card-title">
+                        Coxinha da asa de frango a granel kg
+                      </h5>
+                      <p class="card-text">R$ 14,99</p>
+                      <a href="#" class="btn btn-primary">Comprar</a>
+                    </div>
+                  </div>
+
+                  <div class="card">
+                    <div class="image-wrapper">
+                      <img src="imagens/img4.png" alt="..." />
+                    </div>
+                    <div class="card-body">
+                      <h5 class="card-title">
+                        Paleta de cordeiro Do Chef congelada peça kg
+                      </h5>
+                      <p class="card-text">R$ 45,99</p>
+                      <a href="#" class="btn btn-primary">Comprar</a>
+                    </div>
+                  </div>
+
+                  <div class="card">
+                    <div class="image-wrapper">
+                      <img src="imagens/img8.png" alt="..." />
+                    </div>
+                    <div class="card-body">
+                      <h5 class="card-title">
+                        Bisteca suína Sadia a granel kg
+                      </h5>
+                      <p class="card-text">R$ 17,99</p>
+                      <a href="#" class="btn btn-primary">Comprar</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev carousel-control-prev-prod"
+              type="button"
+              data-bs-target="#carousel-carnes"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next carousel-control-next-prod"
+              type="button"
+              data-bs-target="#carousel-carnes"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </section>
+      </article>
+
+
+      <article class="cat-margarinas" id="margarinas">
+        <section class="slides-cat margarinas">
+          <div class="title-cat">
+            <h1>Margarinas</h1>
+          </div>
+          <div
+            id="carousel-margarinas"
+            class="carousel carousel-dark slide"
+            data-bs-touch="false"
+          >
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="cards-wrapper">
+                  <div class="card">
+                    <div class="image-wrapper">
+                      <img src="imagens/img66.png" alt="..." />
+                    </div>
+                    <div class="card-body">
+                      <h5 class="card-title">
+                        Margarina Cremosa Com Sal Qualy Pote 250G
+                      </h5>
+                      <p class="card-text">R$ 7,79</p>
+                      <a href="#" class="btn btn-primary">Comprar</a>
+                    </div>
+                  </div>
+                  
+                  <div class="card">
+                    <div class="image-wrapper">
+                      <img src="imagens/img12.png" alt="..." />
+                    </div>
+                    <div class="card-body">
+                      <h5 class="card-title">
+                        Margarina Qualy tradicional 500 g
+                      </h5>
+                      <p class="card-text">R$ 4,99</p>
+                      <a href="#" class="btn btn-primary">Comprar</a>
+                    </div>
+                  </div>
+
+
+                  <div class="card">
+                    <div class="image-wrapper">
+                      <img src="imagens/img64.png" alt="..." />
+                    </div>
+                    <div class="card-body">
+                      <h5 class="card-title">
+                        Margarina Cremosa DELÍCIA Com Sal Pote 500g
+                      </h5>
+                      <p class="card-text">R$ 8,69</p>
+                      <a href="#" class="btn btn-primary">Comprar</a>
+                    </div>
+                  </div>
+
+                  <div class="card">
+                    <div class="image-wrapper">
+                      <img src="imagens/img65.png" alt="..." />
+                    </div>
+                    <div class="card-body">
+                      <h5 class="card-title">
+                        Margarina Cremosa com Sal Claybom Pote 500g
+                      </h5>
+                      <p class="card-text">R$ 5,99</p>
+                      <a href="#" class="btn btn-primary">Comprar</a>
+                    </div>
+                  </div>
+
+                  <div class="card">
+                    <div class="image-wrapper">
+                      <img src="imagens/img63.png" alt="..." />
+                    </div>
+                    <div class="card-body">
+                      <h5 class="card-title">Margarina com sal Doriana 500g</h5>
+                      <p class="card-text">R$ 8,99</p>
+                      <a href="#" class="btn btn-primary">Comprar</a>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="cards-wrapper">
+                  <div class="card">
+                    <div class="image-wrapper">
+                      <img src="imagens/img12.png" alt="..." />
+                    </div>
+                    <div class="card-body">
+                      <h5 class="card-title">
+                        Margarina Qualy tradicional 500 g
+                      </h5>
+                      <p class="card-text">R$ 4,99</p>
+                      <a href="#" class="btn btn-primary">Comprar</a>
+                    </div>
+                  </div>
+
+                  <div class="card">
+                    <div class="image-wrapper">
+                      <img src="imagens/img63.png" alt="..." />
+                    </div>
+                    <div class="card-body">
+                      <h5 class="card-title">Margarina com sal Doriana 500g</h5>
+                      <p class="card-text">R$ 8,99</p>
+                      <a href="#" class="btn btn-primary">Comprar</a>
+                    </div>
+                  </div>
+
+                  <div class="card">
+                    <div class="image-wrapper">
+                      <img src="imagens/img64.png" alt="..." />
+                    </div>
+                    <div class="card-body">
+                      <h5 class="card-title">
+                        Margarina Cremosa DELÍCIA Com Sal Pote 500g
+                      </h5>
+                      <p class="card-text">R$ 8,69</p>
+                      <a href="#" class="btn btn-primary">Comprar</a>
+                    </div>
+                  </div>
+
+                  <div class="card">
+                    <div class="image-wrapper">
+                      <img src="imagens/img65.png" alt="..." />
+                    </div>
+                    <div class="card-body">
+                      <h5 class="card-title">
+                        Margarina Cremosa com Sal Claybom Pote 500g
+                      </h5>
+                      <p class="card-text">R$ 5,99</p>
+                      <a href="#" class="btn btn-primary">Comprar</a>
+                    </div>
+                  </div>
+
+                  <div class="card">
+                    <div class="image-wrapper">
+                      <img src="imagens/img12.png" alt="..." />
+                    </div>
+                    <div class="card-body">
+                      <h5 class="card-title">
+                        Margarina Qualy tradicional 500 g
+                      </h5>
+                      <p class="card-text">R$ 4,99</p>
+                      <a href="#" class="btn btn-primary">Comprar</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <button
+              class="carousel-control-prev carousel-control-prev-prod"
+              type="button"
+              data-bs-target="#carousel-margarinas"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next carousel-control-next-prod"
+              type="button"
+              data-bs-target="#carousel-margarinas"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </section>
+      </article>
+
+
+      <article class="cat-graos" id="graos">
+        <section class="slides-cat graos">
+          <div class="title-cat">
+            <h1>Grãos</h1>
+          </div>
+          <div
+            id="carousel-graos"
+            class="carousel carousel-cat carousel-dark slide"
+            data-bs-touch="false"
+          >
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="cards-wrapper">
+                  <div class="card">
+                    <div class="image-wrapper">
+                      <img src="imagens/img67.png" alt="..." />
+                    </div>
+                    <div class="card-body">
+                      <h5 class="card-title">Feijão Carioca Camil 1kg</h5>
+                      <p class="card-text">R$ 14,35</p>
+                      <a href="#" class="btn btn-primary">Comprar</a>
+                    </div>
+                  </div>
+
+                  <div class="card">
+                    <div class="image-wrapper">
+                      <img src="imagens/img68.png" alt="..." />
+                    </div>
+                    <div class="card-body">
+                      <h5 class="card-title">
+                        Arroz Agulhinha Tipo 1 TIO JOÃO Pacote 1kg
+                      </h5>
+                      <p class="card-text">R$ 7,39</p>
+                      <a href="#" class="btn btn-primary">Comprar</a>
+                    </div>
+                  </div>
+
+                  <div class="card">
+                    <div class="image-wrapper">
+                      <img src="imagens/img69.png" alt="..." />
+                    </div>
+                    <div class="card-body">
+                      <h5 class="card-title">
+                        Café Pilão Torrado E Moído Tradicional Almofada 500g
+                      </h5>
+                      <p class="card-text">R$ 21,99</p>
+                      <a href="#" class="btn btn-primary">Comprar</a>
+                    </div>
+                  </div>
+
+                  <div class="card">
+                    <div class="image-wrapper">
+                      <img src="imagens/img70.png" alt="..." />
+                    </div>
+                    <div class="card-body">
+                      <h5 class="card-title">Feijão Branco Kicaldo 1kg</h5>
+                      <p class="card-text">R$ 12,99</p>
+                      <a href="#" class="btn btn-primary">Comprar</a>
+                    </div>
+                  </div>
+
+                  <div class="card">
+                    <div class="image-wrapper">
+                      <img src="imagens/img13.png" alt="..." />
+                    </div>
+                    <div class="card-body">
+                      <h5 class="card-title">
+                        Arroz branco Blue Ville tipo 1 5 kg
+                      </h5>
+                      <p class="card-text">R$ 22,98</p>
+                      <a href="#" class="btn btn-primary">Comprar</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="carousel-item">
+                <div class="cards-wrapper">
+                  
+                  <div class="card">
+                    <div class="image-wrapper">
+                      <img src="imagens/img69.png" alt="..." />
+                    </div>
+                    <div class="card-body">
+                      <h5 class="card-title">
+                        Café Pilão Torrado E Moído Tradicional Almofada 500g
+                      </h5>
+                      <p class="card-text">R$ 21,99</p>
+                      <a href="#" class="btn btn-primary">Comprar</a>
+                    </div>
+                  </div>
+
+                  <div class="card">
+                    <div class="image-wrapper">
+                      <img src="imagens/img68.png" alt="..." />
+                    </div>
+                    <div class="card-body">
+                      <h5 class="card-title">
+                        Arroz Agulhinha Tipo 1 TIO JOÃO Pacote 1kg
+                      </h5>
+                      <p class="card-text">R$ 7,39</p>
+                      <a href="#" class="btn btn-primary">Comprar</a>
+                    </div>
+                  </div>
+
+                  <div class="card">
+                    <div class="image-wrapper">
+                      <img src="imagens/img70.png" alt="..." />
+                    </div>
+                    <div class="card-body">
+                      <h5 class="card-title">Feijão Branco Kicaldo 1kg</h5>
+                      <p class="card-text">R$ 12,99</p>
+                      <a href="#" class="btn btn-primary">Comprar</a>
+                    </div>
+                  </div><div class="card">
+                    <div class="image-wrapper">
+                      <img src="imagens/img67.png" alt="..." />
+                    </div>
+                    <div class="card-body">
+                      <h5 class="card-title">Feijão Carioca Camil 1kg</h5>
+                      <p class="card-text">R$ 14,35</p>
+                      <a href="#" class="btn btn-primary">Comprar</a>
+                    </div>
+                  </div>
+
+
+                  <div class="card">
+                    <div class="image-wrapper">
+                      <img src="imagens/img13.png" alt="..." />
+                    </div>
+                    <div class="card-body">
+                      <h5 class="card-title">
+                        Arroz branco Blue Ville tipo 1 5 kg
+                      </h5>
+                      <p class="card-text">R$ 22,98</p>
+                      <a href="#" class="btn btn-primary">Comprar</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <button
+              class="carousel-control-prev carousel-control-prev-prod"
+              type="button"
+              data-bs-target="#carousel-graos"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next carousel-control-next-prod"
+              type="button"
+              data-bs-target="#carousel-graos"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </section>
+      </article>
+
+
+      <article class="cat-temperos" id="temperos">
+        <section class="slides-cat temperos">
+          <div class="title-cat">
+            <h1>Temperos</h1>
+          </div>
+          <div
+            id="carousel-temperos"
+            class="carousel carousel-cat carousel-dark slide"
+            data-bs-touch="false"
+          >
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="cards-wrapper">
+                  <div class="card">
+                    <div class="image-wrapper">
+                      <img src="imagens/img14.png" alt="..." />
+                    </div>
+                    <div class="card-body">
+                      <h5 class="card-title">
+                        Azeite de oliva Gallo clássico extra virgem vidro 500 ml
+                      </h5>
+                      <p class="card-text">R$ 19,99</p>
+                      <a href="#" class="btn btn-primary">Comprar</a>
+                    </div>
+                  </div>
+
+                  <div class="card">
+                    <div class="image-wrapper">
+                      <img src="imagens/img71.png" alt="..." />
+                    </div>
+                    <div class="card-body">
+                      <h5 class="card-title">Sabor a Mi Com Pimenta 300g</h5>
+                      <p class="card-text">R$ 5,16</p>
+                      <a href="#" class="btn btn-primary">Comprar</a>
+                    </div>
+                  </div>
+
+                  <div class="card">
+                    <div class="image-wrapper">
+                      <img src="imagens/img72.png" alt="..." />
+                    </div>
+                    <div class="card-body">
+                      <h5 class="card-title">
+                        Mix De Temperos Especiarias Refoga 200g
+                      </h5>
+                      <p class="card-text">R$ 13,99</p>
+                      <a href="#" class="btn btn-primary">Comprar</a>
+                    </div>
+                  </div>
+
+                  <div class="card">
+                    <div class="image-wrapper">
+                      <img src="imagens/img73.png" alt="..." />
+                    </div>
+                    <div class="card-body">
+                      <h5 class="card-title">AJI‐SAL Churrasco 1 kg</h5>
+                      <p class="card-text">R$ 16,94</p>
+                      <a href="#" class="btn btn-primary">Comprar</a>
+                    </div>
+                  </div>
+
+                  <div class="card">
+                    <div class="image-wrapper">
+                      <img src="imagens/img75.png" alt="..." />
+                    </div>
+                    <div class="card-body">
+                      <h5 class="card-title">
+                        Um pacote de 1kg de sal Cisne tradicional
+                      </h5>
+                      <p class="card-text">R$ 4,98</p>
+                      <a href="#" class="btn btn-primary">Comprar</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="carousel-item">
+                <div class="cards-wrapper">
+                 
+                  <div class="card">
+                    <div class="image-wrapper">
+                      <img src="imagens/img71.png" alt="..." />
+                    </div>
+                    <div class="card-body">
+                      <h5 class="card-title">Sabor a Mi Com Pimenta 300g</h5>
+                      <p class="card-text">R$ 5,16</p>
+                      <a href="#" class="btn btn-primary">Comprar</a>
+                    </div>
+                  </div>
+
+
+                  <div class="card">
+                    <div class="image-wrapper">
+                      <img src="imagens/img14.png" alt="..." />
+                    </div>
+                    <div class="card-body">
+                      <h5 class="card-title">
+                        Azeite de oliva Gallo clássico extra virgem vidro 500 ml
+                      </h5>
+                      <p class="card-text">R$ 19,99</p>
+                      <a href="#" class="btn btn-primary">Comprar</a>
+                    </div>
+                  </div>
+
+                  <div class="card">
+                    <div class="image-wrapper">
+                      <img src="imagens/img73.png" alt="..." />
+                    </div>
+                    <div class="card-body">
+                      <h5 class="card-title">AJI‐SAL Churrasco 1 kg</h5>
+                      <p class="card-text">R$ 16,94</p>
+                      <a href="#" class="btn btn-primary">Comprar</a>
+                    </div>
+                  </div>
+
+                  <div class="card">
+                    <div class="image-wrapper">
+                      <img src="imagens/img75.png" alt="..." />
+                    </div>
+                    <div class="card-body">
+                      <h5 class="card-title">
+                        Um pacote de 1kg de sal Cisne tradicional
+                      </h5>
+                      <p class="card-text">R$ 4,98</p>
+                      <a href="#" class="btn btn-primary">Comprar</a>
+                    </div>
+                  </div>
+                  
+                  <div class="card">
+                    <div class="image-wrapper">
+                      <img src="imagens/img72.png" alt="..." />
+                    </div>
+                    <div class="card-body">
+                      <h5 class="card-title">
+                        Mix De Temperos Especiarias Refoga 200g
+                      </h5>
+                      <p class="card-text">R$ 13,99</p>
+                      <a href="#" class="btn btn-primary">Comprar</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <button
+              class="carousel-control-prev carousel-control-prev-prod"
+              type="button"
+              data-bs-target="#carousel-temperos"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next carousel-control-next-prod"
+              type="button"
+              data-bs-target="#carousel-temperos"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </section>
+      </article>
+
+
+      <article class="cat-doces" id="doces">
+        <section class="slides-cat doces">
+          <div class="title-cat">
+            <h1>Doces</h1>
+          </div>
+          <div
+            id="carousel-doces"
+            class="carousel carousel-cat carousel-dark slide"
+            data-bs-touch="false"
+          >
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="cards-wrapper">
+                  
+                  <div class="card">
+                    <div class="image-wrapper">
+                      <img src="imagens/img16.png" alt="..." />
+                    </div>
+                    <div class="card-body">
+                      <h5 class="card-title">Chocolate em tablete Lacta sabores 90 g</h5>
+                      <p class="card-text">R$ 4,19</p>
+                      <a href="#" class="btn btn-primary">Comprar</a>
+                    </div>
+                  </div>
+
+                  <div class="card">
+                    <div class="image-wrapper">
+                      <img src="imagens/img15.png" alt="..." />
+                    </div>
+                    <div class="card-body">
+                      <h5 class="card-title">
+                        Leite condensado Moça semidesnatado TP 395 g
+                      </h5>
+                      <p class="card-text">R$ 4,69                      </p>
+                      <a href="#" class="btn btn-primary">Comprar</a>
+                    </div>
+                  </div>
+
+                  <div class="card">
+                    <div class="image-wrapper">
+                      <img src="imagens/img76.png" alt="..." />
+                    </div>
+                    <div class="card-body">
+                      <h5 class="card-title">Bala Mastigável 7 Belo Framboesa Pacote 500g</h5>
+                      <p class="card-text">R$ 11,72</p>
+                      <a href="#" class="btn btn-primary">Comprar</a>
+                    </div>
+                  </div>
+
+                  <div class="card">
+                    <div class="image-wrapper">
+                      <img src="imagens/img77.png" alt="..." />
+                    </div>
+                    <div class="card-body">
+                      <h5 class="card-title">
+                        Caixa Gomets Goma Tubo Frutas Dori 32g 30und
+                      </h5>
+                      <p class="card-text">R$ 19,59</p>
+                      <a href="#" class="btn btn-primary">Comprar</a>
+                    </div>
+                  </div>
+
+                  <div class="card">
+                    <div class="image-wrapper">
+                      <img src="imagens/img17.png" alt="..." />
+                    </div>
+                    <div class="card-body">
+                      <h5 class="card-title">
+                        Chocolate Lindt Lindor Milk ou Swiss Classic 100 g
+                      </h5>
+                      <p class="card-text">R$ 19,90</p>
+                      <a href="#" class="btn btn-primary">Comprar</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="carousel-item">
+                <div class="cards-wrapper">
+                  <div class="card">
+                    <div class="image-wrapper">
+                      <img src="imagens/img15.png" alt="..." />
+                    </div>
+                    <div class="card-body">
+                      <h5 class="card-title">
+                        Leite condensado Moça semidesnatado TP 395 g
+                      </h5>
+                      <p class="card-text">R$ 4,69                      </p>
+                      <a href="#" class="btn btn-primary">Comprar</a>
+                    </div>
+                  </div>
+
+                  <div class="card">
+                    <div class="image-wrapper">
+                      <img src="imagens/img16.png" alt="..." />
+                    </div>
+                    <div class="card-body">
+                      <h5 class="card-title">Chocolate em tablete Lacta sabores 90 g</h5>
+                      <p class="card-text">R$ 4,19</p>
+                      <a href="#" class="btn btn-primary">Comprar</a>
+                    </div>
+                  </div>
+
+                  <div class="card">
+                    <div class="image-wrapper">
+                      <img src="imagens/img17.png" alt="..." />
+                    </div>
+                    <div class="card-body">
+                      <h5 class="card-title">
+                        Chocolate Lindt Lindor Milk ou Swiss Classic 100 g
+                      </h5>
+                      <p class="card-text">R$ 19,90</p>
+                      <a href="#" class="btn btn-primary">Comprar</a>
+                    </div>
+                  </div>
+
+                  <div class="card">
+                    <div class="image-wrapper">
+                      <img src="imagens/img76.png" alt="..." />
+                    </div>
+                    <div class="card-body">
+                      <h5 class="card-title">Bala Mastigável 7 Belo Framboesa Pacote 500g</h5>
+                      <p class="card-text">R$ 11,72</p>
+                      <a href="#" class="btn btn-primary">Comprar</a>
+                    </div>
+                  </div>
+
+                  <div class="card">
+                    <div class="image-wrapper">
+                      <img src="imagens/img77.png" alt="..." />
+                    </div>
+                    <div class="card-body">
+                      <h5 class="card-title">
+                        Caixa Gomets Goma Tubo Frutas Dori 32g 30und
+                      </h5>
+                      <p class="card-text">R$ 19,59</p>
+                      <a href="#" class="btn btn-primary">Comprar</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <button
+              class="carousel-control-prev carousel-control-prev-prod"
+              type="button"
+              data-bs-target="#carousel-doces"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next carousel-control-next-prod"
+              type="button"
+              data-bs-target="#carousel-doces"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </section>
+      </article>
+
+
+      <article class="cat-bebidas" id="bebidas">
+        <section class="slides-cat bebidas">
+          <div class="title-cat">
+            <h1>Bebidas</h1>
+          </div>
+          <div
+            id="carousel-bebidas"
+            class="carousel carousel-cat carousel-dark slide"
+            data-bs-touch="false"
+          >
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="cards-wrapper">
+                  <div class="card">
+                    <div class="image-wrapper">
+                      <img src="imagens/img18.png" alt="..." />
+                    </div>
+                    <div class="card-body">
+                      <h5 class="card-title">
+                        Refrigerante H2OH! sabores pet 1,5 L
+                      </h5>
+                      <p class="card-text">R$ 4,99</p>
+                      <a href="#" class="btn btn-primary">Comprar</a>
+                    </div>
+                  </div>
+
+                  <div class="card">
+                    <div class="image-wrapper">
+                      <img src="imagens/img19.png" alt="..." />
+                    </div>
+                    <div class="card-body">
+                      <h5 class="card-title">Cerveja Bohemia puro malte lata 350 ml</h5>
+                      <p class="card-text">R$ 2,49</p>
+                      <a href="#" class="btn btn-primary">Comprar</a>
+                    </div>
+                  </div>
+
+                  <div class="card">
+                    <div class="image-wrapper">
+                      <img src="imagens/img20.png" alt="..." />
+                    </div>
+                    <div class="card-body">
+                      <h5 class="card-title">
+                        Vinho Espumante Casa Perini moscatel branco 750 ml
+                      </h5>
+                      <p class="card-text">R$ 49,99</p>
+                      <a href="#" class="btn btn-primary">Comprar</a>
+                    </div>
+                  </div>
+
+                  <div class="card">
+                    <div class="image-wrapper">
+                      <img src="imagens/img21.png" alt="..." />
+                    </div>
+                    <div class="card-body">
+                      <h5 class="card-title">Vinho Espumante Salton moscatel branco 750 ml</h5>
+                      <p class="card-text">R$ 29,90</p>
+                      <a href="#" class="btn btn-primary">Comprar</a>
+                    </div>
+                  </div>
+
+                  <div class="card">
+                    <div class="image-wrapper">
+                      <img src="imagens/img22.png" alt="..." />
+                    </div>
+                    <div class="card-body">
+                      <h5 class="card-title">
+                        Vinho Salton Intenso merlot tinto 750 ml
+                      </h5>
+                      <p class="card-text">R$ 31,59</p>
+                      <a href="#" class="btn btn-primary">Comprar</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="carousel-item">
+                <div class="cards-wrapper">
+
+                  <div class="card">
+                    <div class="image-wrapper">
+                      <img src="imagens/img24.png" alt="..." />
+                    </div>
+                    <div class="card-body">
+                      <h5 class="card-title">Vinho Frances Bois Mirail Rouge tinto 750 ml</h5>
+                      <p class="card-text">R$ 31,90</p>
+                      <a href="#" class="btn btn-primary">Comprar</a>
+                    </div>
+                  </div>
+
+                  <div class="card">
+                    <div class="image-wrapper">
+                      <img src="imagens/img23.png" alt="..." />
+                    </div>
+                    <div class="card-body">
+                      <h5 class="card-title">
+                        Vinho Frisante Mioranza suave rosé 750 ml
+                      </h5>
+                      <p class="card-text">R$ 19,90</p>
+                      <a href="#" class="btn btn-primary">Comprar</a>
+                    </div>
+                  </div>
+
+                  <div class="card">
+                    <div class="image-wrapper">
+                      <img src="imagens/img26.png" alt="..." />
+                    </div>
+                    <div class="card-body">
+                      <h5 class="card-title">Vinho Português Terra Mãe tinto 750 ml</h5>
+                      <p class="card-text">R$ 30,90</p>
+                      <a href="#" class="btn btn-primary">Comprar</a>
+                    </div>
+                  </div>
+
+                  <div class="card">
+                    <div class="image-wrapper">
+                      <img src="imagens/img21.png" alt="..." />
+                    </div>
+                    <div class="card-body">
+                      <h5 class="card-title">Vinho Espumante Salton moscatel branco 750 ml</h5>
+                      <p class="card-text">R$ 29,90</p>
+                      <a href="#" class="btn btn-primary">Comprar</a>
+                    </div>
+                  </div>
+
+                  
+                  <div class="card">
+                    <div class="image-wrapper">
+                      <img src="imagens/img25.png" alt="..." />
+                    </div>
+                    <div class="card-body">
+                      <h5 class="card-title">
+                        Vinho Chileno Tres Toros cabernet sauvignon tinto 750 ml
+                      </h5>
+                      <p class="card-text">R$ 29,90</p>
+                      <a href="#" class="btn btn-primary">Comprar</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <button
+              class="carousel-control-prev carousel-control-prev-prod"
+              type="button"
+              data-bs-target="#carousel-bebidas"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next carousel-control-next-prod"
+              type="button"
+              data-bs-target="#carousel-bebidas"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </section>
+      </article>
+
+
+      <article class="cat-higiene" id="higiene">
+        <section class="slides-cat higiene">
+          <div class="title-cat">
+            <h1>Higiene e limpeza</h1>
+          </div>
+          <div
+            id="carousel-higiene"
+            class="carousel carousel-cat carousel-dark slide"
+            data-bs-touch="false"
+          >
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="cards-wrapper">
+                  <div class="card">
+                    <div class="image-wrapper">
+                      <img src="imagens/img27.png" alt="..." />
+                    </div>
+                    <div class="card-body">
+                      <h5 class="card-title">
+                        Kit enxaguante bucal Colgate Plax Total 12 500 ml + Plax 250 ml
+                      </h5>
+                      <p class="card-text">R$ 19,99</p>
+                      <a href="#" class="btn btn-primary">Comprar</a>
+                    </div>
+                  </div>
+
+                  <div class="card">
+                    <div class="image-wrapper">
+                      <img src="imagens/img28.png" alt="..." />
+                    </div>
+                    <div class="card-body">
+                      <h5 class="card-title">Kit toalha umedecida Johnson’s c/ 48 unidades Leve 4 Pague 3</h5>
+                      <p class="card-text">R$ 32,49</p>
+                      <a href="#" class="btn btn-primary">Comprar</a>
+                    </div>
+                  </div>
+
+                  <div class="card">
+                    <div class="image-wrapper">
+                      <img src="imagens/img29.png" alt="..." />
+                    </div>
+                    <div class="card-body">
+                      <h5 class="card-title">
+                        Lava roupas concentrado Ariel fragrâncias 1,2 L
+                      </h5>
+                      <p class="card-text">R$ 17,99</p>
+                      <a href="#" class="btn btn-primary">Comprar</a>
+                    </div>
+                  </div>
+
+                  <div class="card">
+                    <div class="image-wrapper">
+                      <img src="imagens/img30.png" alt="..." />
+                    </div>
+                    <div class="card-body">
+                      <h5 class="card-title">Limpador Veja Gold multiuso original 500 ml com 10% de desconto</h5>
+                      <p class="card-text">R$ 2,90</p>
+                      <a href="#" class="btn btn-primary">Comprar</a>
+                    </div>
+                  </div>
+
+                  <div class="card">
+                    <div class="image-wrapper">
+                      <img src="imagens/img31.png" alt="..." />
+                    </div>
+                    <div class="card-body">
+                      <h5 class="card-title">
+                        Papel higiênico Neve folha dupla ou tripla 20/30 metros com 4 unidades
+                      </h5>
+                      <p class="card-text">R$ 6,99</p>
+                      <a href="#" class="btn btn-primary">Comprar</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="carousel-item">
+                <div class="cards-wrapper">
+                  <div class="card">
+                    <div class="image-wrapper">
+                      <img src="imagens/img27.png" alt="..." />
+                    </div>
+                    <div class="card-body">
+                      <h5 class="card-title">
+                        Kit enxaguante bucal Colgate Plax Total 12 500 ml + Plax 250 ml
+                      </h5>
+                      <p class="card-text">R$ 19,99</p>
+                      <a href="#" class="btn btn-primary">Comprar</a>
+                    </div>
+                  </div>
+
+                  <div class="card">
+                    <div class="image-wrapper">
+                      <img src="imagens/img29.png" alt="..." />
+                    </div>
+                    <div class="card-body">
+                      <h5 class="card-title">
+                        Lava roupas concentrado Ariel fragrâncias 1,2 L
+                      </h5>
+                      <p class="card-text">R$ 17,99</p>
+                      <a href="#" class="btn btn-primary">Comprar</a>
+                    </div>
+                  </div>
+
+                  <div class="card">
+                    <div class="image-wrapper">
+                      <img src="imagens/img28.png" alt="..." />
+                    </div>
+                    <div class="card-body">
+                      <h5 class="card-title">Kit toalha umedecida Johnson’s c/ 48 unidades Leve 4 Pague 3</h5>
+                      <p class="card-text">R$ 32,49</p>
+                      <a href="#" class="btn btn-primary">Comprar</a>
+                    </div>
+                  </div>
+
+                  <div class="card">
+                    <div class="image-wrapper">
+                      <img src="imagens/img31.png" alt="..." />
+                    </div>
+                    <div class="card-body">
+                      <h5 class="card-title">
+                        Papel higiênico Neve folha dupla ou tripla 20/30 metros com 4 unidades
+                      </h5>
+                      <p class="card-text">R$ 6,99</p>
+                      <a href="#" class="btn btn-primary">Comprar</a>
+                    </div>
+                  </div>
+
+                  <div class="card">
+                    <div class="image-wrapper">
+                      <img src="imagens/img30.png" alt="..." />
+                    </div>
+                    <div class="card-body">
+                      <h5 class="card-title">Limpador Veja Gold multiuso original 500 ml com 10% de desconto</h5>
+                      <p class="card-text">R$ 2,90</p>
+                      <a href="#" class="btn btn-primary">Comprar</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              
+
+            
+            </div>
+
+            <button
+              class="carousel-control-prev carousel-control-prev-prod"
+              type="button"
+              data-bs-target="#carousel-higiene"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next carousel-control-next-prod"
+              type="button"
+              data-bs-target="#carousel-higiene"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </section>
+      </article>
+
+
+      <article class="cat-verduras" id="verduras">
+        <section class="slides-cat verduras">
+          <div class="title-cat">
+            <h1>Verduras e Legumes</h1>
+          </div>
+          <div
+            id="carousel-verduras"
+            class="carousel carousel-cat carousel-dark slide"
+            data-bs-touch="false"
+          >
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="cards-wrapper">
+                  <div class="card">
+                    <div class="image-wrapper">
+                      <img src="imagens/img32.png" alt="..." />
+                    </div>
+                    <div class="card-body">
+                      <h5 class="card-title">
+                        Abobrinha italiana kg
+                      </h5>
+                      <p class="card-text">R$ 1,99</p>
+                      <a href="#" class="btn btn-primary">Comprar</a>
+                    </div>
+                  </div>
+    
+                  <div class="card">
+                    <div class="image-wrapper">
+                      <img src="imagens/img33.png" alt="..." />
+                    </div>
+                    <div class="card-body">
+                      <h5 class="card-title">Alho Roxo cada 100g</h5>
+                      <p class="card-text">R$ 2,89</p>
+                      <a href="#" class="btn btn-primary">Comprar</a>
+                    </div>
+                  </div>
+    
+                  <div class="card">
+                    <div class="image-wrapper">
+                      <img src="imagens/img34.png" alt="..." />
+                    </div>
+                    <div class="card-body">
+                      <h5 class="card-title">
+                        Batata doce rosada kg
+                      </h5>
+                      <p class="card-text">R$ 1,99</p>
+                      <a href="#" class="btn btn-primary">Comprar</a>
+                    </div>
+                  </div>
+    
+                  <div class="card">
+                    <div class="image-wrapper">
+                      <img src="imagens/img35.png" alt="..." />
+                    </div>
+                    <div class="card-body">
+                      <h5 class="card-title">Berinjela Roxa kg</h5>
+                      <p class="card-text">R$ 3,89</p>
+                      <a href="#" class="btn btn-primary">Comprar</a>
+                    </div>
+                  </div>
+    
+                  <div class="card">
+                    <div class="image-wrapper">
+                      <img src="imagens/img36.png" alt="..." />
+                    </div>
+                    <div class="card-body">
+                      <h5 class="card-title">
+                        Cebola kg</h5>
+                      <p class="card-text">R$ 4,49</p>
+                      <a href="#" class="btn btn-primary">Comprar</a>
+                    </div>
+                  </div>
+                </div>
+                </div>
+
+                  <div class="carousel-item">
+                    <div class="cards-wrapper">
+                      <div class="card">
+                        <div class="image-wrapper">
+                          <img src="imagens/img42.png" alt="..." />
+                        </div>
+                        <div class="card-body">
+                          <h5 class="card-title">
+                            Mandioquinha kg
+                          </h5>
+                          <p class="card-text">R$ 6,99</p>
+                          <a href="#" class="btn btn-primary">Comprar</a>
+                        </div>
+                      </div>
+        
+                      <div class="card">
+                        <div class="image-wrapper">
+                          <img src="imagens/img44.png" alt="..." />
+                        </div>
+                        <div class="card-body">
+                          <h5 class="card-title">Pepino japonês kg</h5>
+                          <p class="card-text">R$ 2,99</p>
+                          <a href="#" class="btn btn-primary">Comprar</a>
+                        </div>
+                      </div>
+        
+                      <div class="card">
+                        <div class="image-wrapper">
+                          <img src="imagens/img45.png" alt="..." />
+                        </div>
+                        <div class="card-body">
+                          <h5 class="card-title">
+                            Batata doce rosada kg
+                          </h5>
+                          <p class="card-text">R$ 1,99</p>
+                          <a href="#" class="btn btn-primary">Comprar</a>
+                        </div>
+                      </div>
+        
+                      <div class="card">
+                        <div class="image-wrapper">
+                          <img src="imagens/img46.png" alt="..." />
+                        </div>
+                        <div class="card-body">
+                          <h5 class="card-title">Tomate carmem kg</h5>
+                          <p class="card-text">R$ 3,99</p>
+                          <a href="#" class="btn btn-primary">Comprar</a>
+                        </div>
+                      </div>
+        
+                      <div class="card">
+                        <div class="image-wrapper">
+                          <img src="imagens/img47.png" alt="..." />
+                        </div>
+                        <div class="card-body">
+                          <h5 class="card-title">
+                            Tomate Grape Mel Trebeschi 180 g</h5>
+                          <p class="card-text">R$ 2,49</p>
+                          <a href="#" class="btn btn-primary">Comprar</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+    
+            <button
+              class="carousel-control-prev carousel-control-prev-prod"
+              type="button"
+              data-bs-target="#carousel-verduras"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next carousel-control-next-prod"
+              type="button"
+              data-bs-target="#carousel-verduras"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </section>
+      </article>
+
+
+      <article class="cat-frutas" id="frutas">
+        <section class="slides-cat frutas">
+          <div class="title-cat">
+            <h1>Frutas</h1>
+          </div>
+          <div
+            id="carousel-frutas"
+            class="carousel carousel-cat carousel-dark slide"
+            data-bs-touch="false"
+          >
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="cards-wrapper">
+                  <div class="card">
+                    <div class="image-wrapper">
+                      <img src="imagens/img57.png" alt="..." />
+                    </div>
+                    <div class="card-body">
+                      <h5 class="card-title">
+                        Manga tommy kg
+                      </h5>
+                      <p class="card-text">R$ 3,99</p>
+                      <a href="#" class="btn btn-primary">Comprar</a>
+                    </div>
+                  </div>
+    
+                  <div class="card">
+                    <div class="image-wrapper">
+                      <img src="imagens/img58.png" alt="..." />
+                    </div>
+                    <div class="card-body">
+                      <h5 class="card-title">Maracujá azedo kg</h5>
+                      <p class="card-text">R$ 5,99</p>
+                      <a href="#" class="btn btn-primary">Comprar</a>
+                    </div>
+                  </div>
+    
+                  <div class="card">
+                    <div class="image-wrapper">
+                      <img src="imagens/img59.png" alt="..." />
+                    </div>
+                    <div class="card-body">
+                      <h5 class="card-title">
+                        Mexerica ponkan kg
+                      </h5>
+                      <p class="card-text">R$ 2,89</p>
+                      <a href="#" class="btn btn-primary">Comprar</a>
+                    </div>
+                  </div>
+    
+                  <div class="card">
+                    <div class="image-wrapper">
+                      <img src="imagens/img60.png" alt="..." />
+                    </div>
+                    <div class="card-body">
+                      <h5 class="card-title">Pera williams kg</h5>
+                      <p class="card-text">R$ 7,99</p>
+                      <a href="#" class="btn btn-primary">Comprar</a>
+                    </div>
+                  </div>
+    
+                  <div class="card">
+                    <div class="image-wrapper">
+                      <img src="imagens/img61.png" alt="..." />
+                    </div>
+                    <div class="card-body">
+                      <h5 class="card-title">
+                        Uva branca bandeja 500 g</h5>
+                      <p class="card-text">R$ 5,99</p>
+                      <a href="#" class="btn btn-primary">Comprar</a>
+                    </div>
+                  </div>
+                </div>
+                </div>
+
+                  <div class="carousel-item">
+                    <div class="cards-wrapper">
+                      <div class="card">
+                        <div class="image-wrapper">
+                          <img src="imagens/img62.png" alt="..." />
+                        </div>
+                        <div class="card-body">
+                          <h5 class="card-title">
+                            Uva preta bandeja 500 g
+                          </h5>
+                          <p class="card-text">R$ 6,49</p>
+                          <a href="#" class="btn btn-primary">Comprar</a>
+                        </div>
+                      </div>
+        
+                      <div class="card">
+                        <div class="image-wrapper">
+                          <img src="imagens/img49.png" alt="..." />
+                        </div>
+                        <div class="card-body">
+                          <h5 class="card-title">Abacate kg</h5>
+                          <p class="card-text">R$ 4,59</p>
+                          <a href="#" class="btn btn-primary">Comprar</a>
+                        </div>
+                      </div>
+        
+                      <div class="card">
+                        <div class="image-wrapper">
+                          <img src="imagens/img50.png" alt="..." />
+                        </div>
+                        <div class="card-body">
+                          <h5 class="card-title">
+                            Caqui fuyu kg
+                          </h5>
+                          <p class="card-text">R$ 4,99</p>
+                          <a href="#" class="btn btn-primary">Comprar</a>
+                        </div>
+                      </div>
+        
+                      <div class="card">
+                        <div class="image-wrapper">
+                          <img src="imagens/img46.png" alt="..." />
+                        </div>
+                        <div class="card-body">
+                          <h5 class="card-title">Goiaba vermelha kg</h5>
+                          <p class="card-text">R$ 3,99</p>
+                          <a href="#" class="btn btn-primary">Comprar</a>
+                        </div>
+                      </div>
+        
+                      <div class="card">
+                        <div class="image-wrapper">
+                          <img src="imagens/img47.png" alt="..." />
+                        </div>
+                        <div class="card-body">
+                          <h5 class="card-title">
+                            Laranja pera kg</h5>
+                          <p class="card-text">R$ 2,79</p>
+                          <a href="#" class="btn btn-primary">Comprar</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="carousel-item">
+                    <div class="cards-wrapper">
+                      <div class="card">
+                        <div class="image-wrapper">
+                          <img src="imagens/img53.png" alt="..." />
+                        </div>
+                        <div class="card-body">
+                          <h5 class="card-title">
+                            Limão taiti kg
+                          </h5>
+                          <p class="card-text">R$ 1,99</p>
+                          <a href="#" class="btn btn-primary">Comprar</a>
+                        </div>
+                      </div>
+        
+                      <div class="card">
+                        <div class="image-wrapper">
+                          <img src="imagens/img54.png" alt="..." />
+                        </div>
+                        <div class="card-body">
+                          <h5 class="card-title">Maçã Fuji kg</h5>
+                          <p class="card-text">R$ 4,99</p>
+                          <a href="#" class="btn btn-primary">Comprar</a>
+                        </div>
+                      </div>
+        
+                      <div class="card">
+                        <div class="image-wrapper">
+                          <img src="imagens/img55.png" alt="..." />
+                        </div>
+                        <div class="card-body">
+                          <h5 class="card-title">
+                            Maçã Senninha pacote 1kg
+                          </h5>
+                          <p class="card-text">R$ 4,49</p>
+                          <a href="#" class="btn btn-primary">Comprar</a>
+                        </div>
+                      </div>
+        
+                      <div class="card">
+                        <div class="image-wrapper">
+                          <img src="imagens/img56.png" alt="..." />
+                        </div>
+                        <div class="card-body">
+                          <h5 class="card-title">Mamão papaya unid.</h5>
+                          <p class="card-text">R$ 2,99</p>
+                          <a href="#" class="btn btn-primary">Comprar</a>
+                        </div>
+                      </div>
+        
+                      <div class="card">
+                        <div class="image-wrapper">
+                          <img src="imagens/img48.png" alt="..." />
+                        </div>
+                        <div class="card-body">
+                          <h5 class="card-title">
+                            Abacaxi pérola unid.</h5>
+                          <p class="card-text">R$ 5,39</p>
+                          <a href="#" class="btn btn-primary">Comprar</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+    
+            <button
+              class="carousel-control-prev carousel-control-prev-prod"
+              type="button"
+              data-bs-target="#carousel-frutas"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next carousel-control-next-prod"
+              type="button"
+              data-bs-target="#carousel-frutas"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </section>
+      </article>
+
+      <article class="cat-peixes" id="peixes">
+        <section class="slides-cat peixes">
+          <div class="title-cat">
+            <h1>Peixes e derivados</h1>
+          </div>
+          <div
+            id="carousel-peixes"
+            class="carousel carousel-cat carousel-dark slide"
+            data-bs-touch="false"
+          >
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="cards-wrapper">
+                  <div class="card">
+                    <div class="image-wrapper">
+                      <img src="imagens/img38.png" alt="..." />
+                    </div>
+                    <div class="card-body">
+                      <h5 class="card-title">
+                        Tilápia inteira fresca kg
+                      </h5>
+                      <p class="card-text">R$ 17,99</p>
+                      <a href="#" class="btn btn-primary">Comprar</a>
+                    </div>
+                  </div>
+    
+                  <div class="card">
+                    <div class="image-wrapper">
+                      <img src="imagens/img39.png" alt="..." />
+                    </div>
+                    <div class="card-body">
+                      <h5 class="card-title">Tambaqui de cativeiro inteiro fresco kg</h5>
+                      <p class="card-text">R$ 21,89</p>
+                      <a href="#" class="btn btn-primary">Comprar</a>
+                    </div>
+                  </div>
+    
+                  <div class="card">
+                    <div class="image-wrapper">
+                      <img src="imagens/img40.png" alt="..." />
+                    </div>
+                    <div class="card-body">
+                      <h5 class="card-title">
+                        Pintado de cativeiro inteiro fresco kg
+                      </h5>
+                      <p class="card-text">R$ 28,99</p>
+                      <a href="#" class="btn btn-primary">Comprar</a>
+                    </div>
+                  </div>
+    
+                  <div class="card">
+                    <div class="image-wrapper">
+                      <img src="imagens/img41.png" alt="..." />
+                    </div>
+                    <div class="card-body">
+                      <h5 class="card-title">Camarão Oceani descascado cozido congelado 400 g</h5>
+                      <p class="card-text">R$ 39,99</p>
+                      <a href="#" class="btn btn-primary">Comprar</a>
+                    </div>
+                  </div>
+    
+                  <div class="card">
+                    <div class="image-wrapper">
+                      <img src="imagens/img78.png" alt="..." />
+                    </div>
+                    <div class="card-body">
+                      <h5 class="card-title">
+                        Filé de Cação 500g</h5>
+                      <p class="card-text">R$ 29,49</p>
+                      <a href="#" class="btn btn-primary">Comprar</a>
+                    </div>
+                  </div>
+                </div>
+                </div>
+
+                  <div class="carousel-item">
+                    <div class="cards-wrapper">
+                      <div class="card">
+                        <div class="image-wrapper">
+                          <img src="imagens/img39.png" alt="..." />
+                        </div>
+                        <div class="card-body">
+                          <h5 class="card-title">Tambaqui de cativeiro inteiro fresco kg</h5>
+                          <p class="card-text">R$ 21,89</p>
+                          <a href="#" class="btn btn-primary">Comprar</a>
+                        </div>
+                      </div>
+        
+                      <div class="card">
+                        <div class="image-wrapper">
+                          <img src="imagens/img40.png" alt="..." />
+                        </div>
+                        <div class="card-body">
+                          <h5 class="card-title">
+                            Pintado de cativeiro inteiro fresco kg
+                          </h5>
+                          <p class="card-text">R$ 28,99</p>
+                          <a href="#" class="btn btn-primary">Comprar</a>
+                        </div>
+                      </div>
+        
+                      <div class="card">
+                        <div class="image-wrapper">
+                          <img src="imagens/img78.png" alt="..." />
+                        </div>
+                        <div class="card-body">
+                          <h5 class="card-title">
+                            Filé de Cação 500g</h5>
+                          <p class="card-text">R$ 29,49</p>
+                          <a href="#" class="btn btn-primary">Comprar</a>
+                        </div>
+                      </div>
+        
+                      <div class="card">
+                        <div class="image-wrapper">
+                          <img src="imagens/img38.png" alt="..." />
+                        </div>
+                        <div class="card-body">
+                          <h5 class="card-title">
+                            Tilápia inteira fresca kg
+                          </h5>
+                          <p class="card-text">R$ 17,99</p>
+                          <a href="#" class="btn btn-primary">Comprar</a>
+                        </div>
+                      </div>
+        
+                      <div class="card">
+                        <div class="image-wrapper">
+                          <img src="imagens/img39.png" alt="..." />
+                        </div>
+                        <div class="card-body">
+                          <h5 class="card-title">Tambaqui de cativeiro inteiro fresco kg</h5>
+                          <p class="card-text">R$ 21,89</p>
+                          <a href="#" class="btn btn-primary">Comprar</a>
+                        </div>
+                      </div>
+        
+                      <div class="card">
+                        <div class="image-wrapper">
+                          <img src="imagens/img41.png" alt="..." />
+                        </div>
+                        <div class="card-body">
+                          <h5 class="card-title">Camarão Oceani descascado cozido congelado 400 g</h5>
+                          <p class="card-text">R$ 39,99</p>
+                          <a href="#" class="btn btn-primary">Comprar</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+    
+            <button
+              class="carousel-control-prev carousel-control-prev-prod"
+              type="button"
+              data-bs-target="#carousel-peixes"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next carousel-control-next-prod"
+              type="button"
+              data-bs-target="#carousel-peixes"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </section>
+      </article>
+    </main>
+
+    <section class="email">
+      <form action="">
+       <div class="message-icon">
+        <i class="bi bi-telegram"></i>
+        <span>Message</span>
+       </div>
+       <div class="input-field">
+        <i class="bi bi-person"></i>
+        <input type="text" name="name" id="name" placeholder="Nome">
+       </div>
+       <div class="input-field">
+        <i class="bi bi-telephone"></i>
+        <input type="email" name="email" id="email" placeholder="Email">
+       </div>
+       <div class="input-field">
+        <i class="bi bi-chat-right-dots"></i>
+        <textarea name="msg" id="msg" placeholder="Mensagem" rows="10"></textarea>
+       </div>
+       <input type="submit" name="btn-enviar" id="btn-enviar" class="btn-enviar" value="Enviar">
+      </form>
+    </section>
+
+    <footer>
+      <section class="devs">
+        <p>Desenvolvedores:</p>
+        <p>Gabriel Gustavo Silva de Souza - RGM: 27422623</p>
+        <p>Fabio Luiz Teixeira            – RGM: 28031270O</p>
+      </section>
+      <section class="social">
+        <p>Siga a gente nas redes sociais:</p>
+        <div>
+          <img src="imagens/facebook.png" alt="">
+          <img src="imagens/instagram.png" alt="">
+          <img src="imagens/twitter.png" alt="">
+          <img src="imagens/whatsapp.png" alt="">
+        </div>
+      </section>
+    </footer>
+    
+  </body>
+</html>
