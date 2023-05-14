@@ -18,9 +18,9 @@ cliente visualize no desktop e no celular;
 
 # Turma: 1ºD/4ºD - ADS - Noturno - Analia Franco
 
-#Desenvolvedores
-Gabriel Gustavo Silva de Souza - RGM: 27422623
-Fabio Luiz Teixeira            – RGM: 28031270
+## Desenvolvedores
+# Gabriel Gustavo Silva de Souza - RGM: 27422623
+# Fabio Luiz Teixeira            – RGM: 28031270
 
 ## Link do projeto online 🔗
 https://gustabriel.github.io/supermercadoa/
