@@ -19,6 +19,7 @@
 ## Desenvolvedores
 ### Gabriel Gustavo Silva de Souza - RGM: 27422623
 ### Fabio Luiz Teixeira            – RGM: 28031270
+### Fernando Henrique do Santos    – RGM: 28232437
 
 # Link do projeto online 🔗
 <a href="https://gustabriel.github.io/supermercadoa/" target="_blank">Supermercado A</a>
